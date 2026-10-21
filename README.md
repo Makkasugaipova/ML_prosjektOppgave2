@@ -8,10 +8,11 @@ beregnet av en maskinlæringsmodell (logistisk regresjon) trent på *Pima Indian
 
 > ⚠️ Dette er et studentprosjekt og **ikke** et diagnoseverktøy.
 
-## 🔗 Nettsiden
-**Live:** [LIM INN LENKE TIL HUGGING FACE SPACE HER]
+   ## Nettsiden
+   En video som viser nettsiden i bruk ligger i `video/demo.mp4`.
+   Nettsiden kan kjøres lokalt med `python app/app.py` (se under).
 
-## 📁 Innhold i repoet
+## Innhold i repoet
 
 | Mappe / fil | Innhold |
 |---|---|
@@ -23,7 +24,7 @@ beregnet av en maskinlæringsmodell (logistisk regresjon) trent på *Pima Indian
 | `report/` | Rapporten |
 | `requirements.txt` | Python-pakker som trengs |
 
-## 📊 Resultater (testsett, 154 pasienter)
+## Resultater (testsett, 154 pasienter)
 
 | Modell | Accuracy | Precision | Recall | F1 | ROC AUC |
 |---|---|---|---|---|---|
@@ -31,7 +32,7 @@ beregnet av en maskinlæringsmodell (logistisk regresjon) trent på *Pima Indian
 | Baseline: Glucose ≥ 125 | 0,682 | 0,540 | 0,630 | 0,581 | – |
 | **Logistisk regresjon (terskel 0,47)** | **0,714** | **0,571** | **0,741** | **0,645** | **0,810** |
 
-## ▶️ Slik reproduserer du resultatene
+## Slik reproduserer du resultatene
 
 Krever Python 3.11 eller nyere.
 
@@ -57,17 +58,7 @@ pip install -r requirements.txt
    ```
    og åpne http://127.0.0.1:7860 i nettleseren.
 
-## 🚀 Deploy på Hugging Face Spaces
-1. Lag et nytt Space med SDK **Gradio**.
-2. Last opp `app/app.py` (som `app.py` i roten) og mappen `model/`.
-3. Legg til en `requirements.txt` med:
-   ```
-   scikit-learn==1.9.1
-   pandas
-   joblib
-   ```
-
-## 📚 Kilder
+## Kilder
 - Datasett: UCI Machine Learning (2016). *Pima Indians Diabetes Database*. Kaggle.
   https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 - Smith, J. W. et al. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus.
